@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
     return (
-        <div>
+        <div className= "contactSection">
             <hr />
 
             <div className="contact-header-container-l col-sm-3 col-md-6 col-lg-12">

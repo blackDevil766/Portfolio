@@ -1,5 +1,5 @@
 // import './App.css';
-import React,{useEffect} from "react"
+import React, { useEffect } from "react"
 import NavBar from "./component/navBar/Nav";
 import Footer from "./component/sections/10Footer/Footer";
 import WelcomeToMyWorld from "./component/sections/1Welcome/WelcomeToMyWorld";
@@ -13,20 +13,22 @@ import 'aos/dist/aos.css';
 // import motion from "framer-motion";
 function App() {
 
- 
- useEffect(() => {
-        AOS.init();
-      }, [])
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div className="App">
       <NavBar />
       <WelcomeToMyWorld />
-      <AboutMe />
+      <div className="onlyAbout">
+        <AboutMe />
+      </div>
       <Resume />
       <Portfolio />
       <Contact />
       <Footer />
-      
+
 
       {/* <div className="container2">
         <div className="item3">

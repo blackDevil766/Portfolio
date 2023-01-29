@@ -10,11 +10,11 @@ function Features() {
 
     return (
         <div id="AboutMe">
-            <hr />
+            {/* <hr /> */}
 
             <div className="About-secondSection">
-                <span data-aos="fade-down" data-aos-duration="1500" class="subtitle">About</span>
-                <h2 data-aos="fade-down" data-aos-duration="1000" className="title">About Me</h2>
+                <span data-aos="fade-down" data-aos-duration="1500" className="subtitle">About</span>
+                <h2 data-aos="fade-down" data-aos-duration="1000" className="title AboutTitle">About Me</h2>
 
             </div>
 
@@ -23,11 +23,16 @@ function Features() {
 
 
 
-                <div  className="about-right-img-section"><img src="img\about2.gif" alt="" /></div>
+                <div  className="about-right-img-section">
+                    <img src="img\hero.gif" alt="" />
+                    
+                    {/* <img src="img\Moon.glb"  alt="" /> */}
+                    
+                </div>
                 
                 <div className="about-left-sectiom">
                     <h1 className="about-title">Hi, I'm Ahmed Allam, Nice To Meet U.</h1>
-                    <p className="about-decribtion">i start coding in 2020, and learning web development fullstack in udemy with angla, after i ending this cource i choose to improve myself in frontend and started to learn and use backend in my project, I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
+                    <p className="about-decribtion">I Start Coding in 2020, and learning web development fullstack in udemy with angla, after i ending this cource i choose to improve myself in frontend and started to learn and use backend in my project, I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
                 </div>
 
                 

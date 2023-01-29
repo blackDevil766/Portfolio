@@ -5,36 +5,6 @@ import Item from "./Item";
 
 function NavBar(props) {
 
-    function scrollToFeatures(params) {
-        console.log("welcome in features");
-    }
-
-    function scrollToPortfolio(params) {
-        console.log("welcome in portfolio");
-    }
-
-    function scrollToResume(params) {
-        console.log("welcome in resume");
-    }
-
-    function scrollToClients(params) {
-        console.log("welcome in clients");
-    }
-
-    function scrollToPricing(params) {
-        console.log("welcome in pricing");
-    }
-
-    function scrollToBlog(params) {
-        console.log("welcome in blog");
-    }
-
-    function scrollContact(params) {
-        console.log("welcome in contact");
-    }
-
-
-
     const [onscrolls, setOnScroll] = useState()
 
     window.addEventListener("scroll", () => {
@@ -51,7 +21,19 @@ function NavBar(props) {
         <nav  id={onscrolls} className ="navbar navbar-expand-lg navbar-light ">
             <div className ="container-fluid ">
 
-                <a data-aos="fade-down" data-aos-duration="1500" className ="navbar-brand navLogo" href="#"><h3 data-aos="fade-down" data-aos-duration="2000" className="TitleName"><img src="img/sleep2.svg" alt="" /></h3> <img className="LogoIcon" src="img\avater1.png" alt="" /></a>
+                <a data-aos="fade-down" data-aos-duration="1500" className ="navbar-brand navLogo" href="#">
+                    <h3 data-aos="fade-down" data-aos-duration="2000" className="TitleName">
+                        {/* <img src="img/sleep2.svg" alt="" /> */}
+                    </h3>
+
+
+                    <svg width="50pt" height="50pt" version="1.1" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+                         <path fill="transparent" class="path" stroke="#c4cfde" stroke-width="50"
+                            d="m570.5 197.75v-113.75c0-14-10.5-24.5-24.5-24.5h-113.75c-21 0-42 7-59.5 17.5-8.75 5.25-15.75 12.25-22.75 21-19.25-22.75-49-38.5-82.25-38.5h-113.75c-14 0-24.5 10.5-24.5 24.5v113.75c0 33.25 15.75 61.25 38.5 82.25-22.75 19.25-38.5 49-38.5 82.25v113.75c0 14 10.5 24.5 24.5 24.5h113.75c14 0 24.5-10.5 24.5-24.5s-10.5-24.5-24.5-24.5h-89.25v-89.25c0-31.5 24.5-56 56-56h89.25v89.25c0 59.5 47.25 106.75 106.75 106.75h113.75c14 0 24.5-10.5 24.5-24.5v-113.75c0-33.25-15.75-61.25-38.5-82.25 26.25-21 40.25-50.75 40.25-84zm-334.25 57.75c-31.5 0-56-24.5-56-56v-91h89.25c31.5 0 56 24.5 56 56v89.25h-89.25zm285.25 106.75v89.25h-89.25c-31.5 0-56-24.5-56-56v-89.25h89.25c29.75-1.75 56 24.5 56 56zm-147-106.75v-89.25c0-19.25 8.75-36.75 24.5-47.25 8.75-7 21-10.5 31.5-10.5h89.25v89.25c0 31.5-24.5 56-56 56h-89.25z" />
+                    </svg>
+                    {/* <img className="LogoIcon" src="img\avater1.png" alt="" /> */}
+                    
+                </a>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -74,10 +56,15 @@ function NavBar(props) {
 
 
                     </ul>
-                    {/* <div className="loginPart"> */}
+                    <div className="hireMe-part">
                         {/* <a className="login"> <img src="imgs\person.svg" alt="" /> Login</a> */}
-                        <button  id="signUpBtn" className="btn" type="submit"><a data-aos="fade-down" data-aos-duration="1500" href="#hireMe">HIRE ME</a></button>
-                    {/* </div> */}
+                        {/* <a href="" download></a> */}
+                            <button  id="signUpBtn" className="btn" type="submit">
+                                <a data-aos="fade-down" data-aos-duration="1500" href="img\Ahmed'sResume.pdf" target="_blank" download>Resume</a>
+                            </button>
+                        <button  id="signUpBtn" className="btn" type="submit"><a data-aos="fade-down" data-aos-duration="1500" href="#hireMe">HIRE ME</a><div className="hvr-icon"></div></button>
+
+                    </div>
 
 
                 </div>

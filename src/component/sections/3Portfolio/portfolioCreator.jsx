@@ -12,33 +12,33 @@ const portfolioImgs = ({
 
 function CardCreator(props) {
 
-    const [hoverd, setHoverd] = useState("")
+    // const [hoverd, setHoverd] = useState("")
 
-    function mouseover() {
-        setHoverd("imgHoverd")
-    }
-    function mouseout() {
-        setHoverd("")
-    }
+    // function mouseover() {
+    //     setHoverd("imgHoverd")
+    // }
+    // function mouseout() {
+    //     setHoverd("")
+    // }
 
-    const [arrowNumber, setArrowNumber] = useState("arrowHide");
+    // const [arrowNumber, setArrowNumber] = useState("arrowHide");
 
-    function mouseoverTitle() {
-        setArrowNumber("arrowShow")
-    }
+    // function mouseoverTitle() {
+    //     setArrowNumber("arrowShow")
+    // }
 
-    function mouseoutTitle() {
-        setArrowNumber("arrowHide")
-    }
+    // function mouseoutTitle() {
+    //     setArrowNumber("arrowHide")
+    // }
 
 
 
     return (
-        <div data-aos="fade-up" data-aos-duration={props.time} onClick={props.show} onMouseOver={mouseover} onMouseOut={mouseout} className="portfolio-container">
+        <div data-aos="fade-up" data-aos-duration={props.time} onClick={props.show}  className="portfolio-container2">
             
 
             <a className="Portfo-img" >
-                <img id="portfolio-img" className={hoverd} src={props.img} alt="" />
+                <img id="portfolio-img" className="imgHover" src={props.img} alt="" />
             </a>
             <div className="category-info">
                 <div className="category-list">
@@ -50,9 +50,9 @@ function CardCreator(props) {
                 </div>
 
             </div>
-            <h4 className="describtion2" onMouseOver={mouseoverTitle} onMouseOut={mouseoutTitle}>
+            <h4 className="describtion2">
                 <h4 className="h4PortfolioTitle">{props.title}</h4>
-                <img id="arrowPortfolioImg" className={arrowNumber} src="\img\arrow.svg" alt="" />
+                <img id="arrowPortfolioImg" className="arrowShow" src="\img\arrow.svg" alt="" />
             </h4>
             
         </div>

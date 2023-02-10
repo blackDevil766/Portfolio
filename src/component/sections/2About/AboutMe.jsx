@@ -24,7 +24,7 @@ function Features() {
 
 
                 <div  className="about-right-img-section">
-                    <img src="img\hero.gif" alt="" />
+                    <img src="img\hero2.gif" alt="" />
                     
                     {/* <img src="img\Moon.glb"  alt="" /> */}
                     

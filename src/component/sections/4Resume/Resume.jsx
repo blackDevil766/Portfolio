@@ -148,7 +148,7 @@ function Resume() {
                 <h1 data-aos="fade-down" data-aos-duration="1000" className="headerTitle">My Resume</h1>
             </div>
 
-            <div data-aos="fade-down" data-aos-duration="1000" className="containers">
+            <div className="containers">
                 <div className="resumeHolder">
 
                     {/* resume1 */}

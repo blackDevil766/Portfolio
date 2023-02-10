@@ -57,12 +57,10 @@ function NavBar(props) {
 
                     </ul>
                     <div className="hireMe-part">
-                        {/* <a className="login"> <img src="imgs\person.svg" alt="" /> Login</a> */}
-                        {/* <a href="" download></a> */}
-                            <button  id="signUpBtn" className="btn" type="submit">
+                            <button  id="NavSignUpBtn" className="btn" type="submit">
                                 <a data-aos="fade-down" data-aos-duration="1500" href="img\Ahmed'sResume.pdf" target="_blank" download>Resume</a>
                             </button>
-                        <button  id="signUpBtn" className="btn" type="submit"><a data-aos="fade-down" data-aos-duration="1500" href="#hireMe">HIRE ME</a><div className="hvr-icon"></div></button>
+                        <button  id="NavSignUpBtn" className="btn" type="submit"><a data-aos="fade-down" data-aos-duration="1500" href="#hireMe">HIRE ME</a><div className="hvr-icon"></div></button>
 
                     </div>
 

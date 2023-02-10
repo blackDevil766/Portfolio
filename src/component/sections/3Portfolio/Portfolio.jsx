@@ -9,6 +9,9 @@ function Portfolio() {
             page1: "hideTheFlyDiv1",
             page2: "hideTheFlyDiv2",
             page3: "hideTheFlyDiv3",
+            page4: "hideTheFlyDiv4",
+            page5: "hideTheFlyDiv5",
+            page6: "hideTheFlyDiv6",
         }
     })
 
@@ -18,6 +21,9 @@ function Portfolio() {
                 page1: "flyingDiv",
                 page2: "hideTheFlyDiv2",
                 page3: "hideTheFlyDiv3",
+                page4: "hideTheFlyDiv4",
+                page5: "hideTheFlyDiv5",
+                page6: "hideTheFlyDiv6",
             }
         })
     }
@@ -28,6 +34,8 @@ function Portfolio() {
                 page1: "hideTheFlyDiv1",
                 page2: "flyingDiv",
                 page3: "hideTheFlyDiv3",
+                page4: "hideTheFlyDiv4",
+                page5: "hideTheFlyDiv5",
             }
         })
     }
@@ -38,6 +46,47 @@ function Portfolio() {
                 page1: "hideTheFlyDiv1",
                 page2: "hideTheFlyDiv2",
                 page3: "flyingDiv",
+                page4: "hideTheFlyDiv4",
+                page6: "hideTheFlyDiv6",
+            }
+        })
+    }
+
+    function Showw4() {
+        setActionTaken(() => {
+            return {
+                page1: "hideTheFlyDiv1",
+                page2: "hideTheFlyDiv2",
+                page3: "hideTheFlyDiv3",
+                page4: "flyingDiv",
+                page5: "hideTheFlyDiv5",
+                page6: "hideTheFlyDiv6",
+            }
+        })
+    }
+
+    function Showw5() {
+        setActionTaken(() => {
+            return {
+                page1: "hideTheFlyDiv1",
+                page2: "hideTheFlyDiv2",
+                page3: "hideTheFlyDiv3",
+                page4: "hideTheFlyDiv4",
+                page5: "flyingDiv",
+                page6: "hideTheFlyDiv6",
+            }
+        })
+    }
+
+    function Showw6() {
+        setActionTaken(() => {
+            return {
+                page1: "hideTheFlyDiv1",
+                page2: "hideTheFlyDiv2",
+                page3: "hideTheFlyDiv3",
+                page4: "hideTheFlyDiv4",
+                page5: "hideTheFlyDiv5",
+                page6: "flyingDiv",
             }
         })
     }
@@ -48,6 +97,9 @@ function Portfolio() {
                 page1: "hideTheFlyDiv1",
                 page2: "hideTheFlyDiv2",
                 page3: "hideTheFlyDiv3",
+                page4: "hideTheFlyDiv4",
+                page5: "hideTheFlyDiv5",
+                page6: "hideTheFlyDiv6",
             }
         }
         )
@@ -95,6 +147,39 @@ function Portfolio() {
     // }
 
 
+    function HiddenPart(props) {
+        return (
+            <>
+                <div id="acti" className={props.class} >
+                    <div className="portfolioShower">
+
+                        <div className="showImg">
+                            <img className="PortfoiloImg"  src={props.img} alt="" />
+                        </div>
+
+                        <div className="showDescribtions">
+
+                            <div onClick={hideTheAction} className="closeDiv">
+                                <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                            </div>
+
+                            <div className="contactShower">
+                                <p className="headTitleOfFlyingDescribtion">Featured - Design</p>
+                                <h3 className="titleOfFlyingDescribtion">{props.title}</h3>
+                                <p className="md-typo-of-flying-describtion">{props.describ}</p>
+                                <p className="md-typo-of-flying-describtion2">{props.language}</p>
+                            </div>
+                            <div className="buttons">
+                                <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
+                                <button id="signUpBtn" className="btn viewBtn" type="submit"><a href={props.href}>view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </>
+        )
+    }
+
     return (
         <div id="portfolio" className="Portfolio-Container1">
             <hr />
@@ -104,88 +189,61 @@ function Portfolio() {
             <PageDetails href = "http://localhost:3001/" class = {actionTaken.page3} img="img/smart.png" /> */}
 
 
-            <div className={actionTaken.page1} >
-                <div className="portfolioShower">
 
-                    <div className="showImg">
-                        <img className="PortfoiloImg" src="img/beete.png" alt="" />
-                    </div>
+            <HiddenPart
+                class={actionTaken.page1}
+                img="img\portfolioImgs\ecommerce.png"
+                title="Ecommerce App."
+                describ="sell products, its show product that owner add it and its have a payment method so that we can sell online"
+                language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS - PYTHON - DEJANGO"
+                href="Ecommerce"
+            />
 
-                    <div className="showDescribtions">
-
-                        <div onClick={hideTheAction} className="closeDiv">
-                            <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                        </div>
-
-                        <div className="contactShower">
-                            <p className="headTitleOfFlyingDescribtion">Featured - Design</p>
-                            <h3 className="titleOfFlyingDescribtion">Ecommerce App.</h3>
-                            <p className="md-typo-of-flying-describtion">sell products, its show product that owner add it and its have a payment method so that we can sell online</p>
-                            <p className="md-typo-of-flying-describtion2">I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS - PYTHON - DEJANGO</p>
-                        </div>
-                        <div className="buttons">
-                            <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
-                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="http://localhost:3002/">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <HiddenPart
+                class={actionTaken.page2}
+                img="img\portfolioImgs\rainbowit.png"
+                title="Portfoilo Design"
+                describ="Portfoilo that show your skills and show it to the world, i made it to prove to my self that i can make anything and to prove to you what am cabable for."
+                language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS"
+                href="inbio"
+            />
 
 
-            <div className={actionTaken.page2} >
-                <div className="portfolioShower">
+            <HiddenPart
+                class={actionTaken.page3}
+                img="img/smart.png"
+                title="Agency Design"
+                describ="It a website to show some people who can make a UI/UX, and It's my first project and i just saw it somewhere and i just traditon it, "
+                language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS"
+                href="agency"
+            />
 
-                    <div className="showImg">
-                        <img className="PortfoiloImg" src="img/inbio.png" alt="" />
-                    </div>
+            <HiddenPart
+                class={actionTaken.page4}
+                img="img/netstorm.png"
+                title="Netstorm"
+                describ="I don't remember what was the purpose of this website but i made like the real one from themesforcet, i made it to improve my skills in frontend i hope you like the design "
+                language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS"
+                href="netstorm"
+            />
 
-                    <div className="showDescribtions">
+            <HiddenPart
+                class={actionTaken.page5}
+                img="img/carData.png"
+                title="Car Details"
+                describ="It was a task i took it from someone who help me to improve my self and find a job"
+                language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS"
+                href="CarDetails"
+            />
 
-                        <div onClick={hideTheAction} className="closeDiv">
-                            <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                        </div>
-
-                        <div className="contactShower">
-                            <p className="headTitleOfFlyingDescribtion">Featured - Design</p>
-                            <h3 className="titleOfFlyingDescribtion">portfoilo Design</h3>
-                            <p className="md-typo-of-flying-describtion">portfoilo that show your skills and show it to the world, i made it to prove to my self that i can make anything and to prove to you what am cabable for.</p>
-                            <p className="md-typo-of-flying-describtion2"> I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS</p>
-                        </div>
-                        <div className="buttons">
-                            <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
-                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="http://localhost:3003/">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div className={actionTaken.page3} >
-                <div className="portfolioShower">
-
-                    <div className="showImg">
-                        <img className="PortfoiloImg" src="img/smart.png" alt="" />
-                    </div>
-
-                    <div className="showDescribtions">
-
-                        <div onClick={hideTheAction} className="closeDiv">
-                            <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                        </div>
-
-                        <div className="contactShower">
-                            <p className="headTitleOfFlyingDescribtion">Featured - Design</p>
-                            <h3 className="titleOfFlyingDescribtion">Agency Design.</h3>
-                            <p className="md-typo-of-flying-describtion">It a website to show some people who can make a UI/UX, and It's my first project and i just saw it somewhere and i just traditon it, </p>
-                            <p className="md-typo-of-flying-describtion2">I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS</p>
-                        </div>
-                        <div className="buttons">
-                            <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
-                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="http://localhost:3001/">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <HiddenPart
+                class={actionTaken.page6}
+                img="img/carData.png"
+                title="Car Details"
+                describ="It was a task i took it from someone who help me to improve my self and find a job"
+                language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS"
+                href="CarDetails"
+            />
 
 
 
@@ -223,41 +281,35 @@ function Portfolio() {
                     id="id3"
                     show={Showw3}
                     img="img\smart.png"
-                    listTitle="photoshop"
+                    listTitle="Design"
                     numbers="630"
                     title="Discover Agency developers"
+                />
+
+                <CardCreator
+                    time="2500"
+                    id="id3"
+                    show={Showw4}
+                    img="img\netstorm.png"
+                    listTitle="Design"
+                    numbers="630"
+                    title="Discover, collect, and sell extraordinary NFTs"
+                />
+
+                <CardCreator
+                    time="2500"
+                    id="id3"
+                    show={Showw5}
+                    img="img\carData.png"
+                    listTitle="Design"
+                    numbers="630"
+                    title="Car Details Design"
                 />
 
 
             </div>
 
-            {/* <div className="portfolio-boxes">
-
-                <CardCreator
-                    show={Showw}
-                    img={portfolioImgs.figma}
-                    listTitle="figma"
-                    numbers="360"
-                    title="Mobile app landing design & app maintain"
-                />
-
-                <CardCreator
-                    show={Showw}
-                    img={portfolioImgs.webDesign}
-                    listTitle="web design"
-                    numbers="280"
-                    title="Design for tecnology & services"
-                />
-
-                <CardCreator
-                    show={Showw}
-                    img={portfolioImgs.webDesign2}
-                    listTitle="web design"
-                    numbers="690"
-                    title="App for tecnology & services"
-                />
-            </div> */}
-
+           
         </div>
     )
 }

@@ -1,3 +1,4 @@
+
 import React from "react";
 
 function Contact() {
@@ -43,35 +44,35 @@ function Contact() {
                         <div className="col-lg-6">
                             <div className="form-group">
                                 <label for="contact-name">Your Name</label>
-                                <input  name="contact-name" id="contact-name" type="text" />
+                                <input  name="contact-name" id="contact-name" autoComplete="off" type="text" />
                             </div>
                         </div>
 
                         <div className="col-lg-6">
                             <div className="form-group">
                                 <label for="contact-phone">Phone Number</label>
-                                <input  name="contact-phone" type="text" />
+                                <input  name="contact-phone" type="text" autoComplete="off" required />
                             </div> 
                         </div>
 
                         <div className="col-lg-12">
                             <div className="form-group">
                                 <label for="contact-email">Email</label>
-                                <input  name="contact-email" type="email" />
+                                <input  name="contact-email" type="email" autoComplete="off" required />
                             </div>
                         </div>
 
                         <div className="col-lg-12">
                             <div className="form-group">
                                 <label for="subject">subject</label>
-                                <input  name="subject" type="text" />
+                                <input  name="subject" type="text" autoComplete="off" required />
                             </div>
                         </div>
 
                         <div className="col-lg-12">
                             <div className="form-group">
                                 <label for="contact-message">Your Message</label>
-                                <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>
+                                <textarea name="contact-message" id="contact-message" autoComplete="off" cols="30" rows="10" required ></textarea>
                             </div>
                         </div>
 

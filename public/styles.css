@@ -878,6 +878,8 @@ hr {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .heartPortfolioSvg {
@@ -887,7 +889,7 @@ hr {
 }
 
 .portfolio-container2 {
-    max-width: 26.8%;
+    max-width: 30.8%;
     background: #c4cfde;
     box-shadow: 1px 1px #b1b1b1, 2px 2px #b1b1b1, 3px 3px #b1b1b1, 4px 4px #b1b1b1, 5px 5px #b1b1b1, 6px 6px #b1b1b1, 7px 7px #b1b1b1, 8px 8px #b1b1b1;
     padding: 30px;
@@ -1101,10 +1103,33 @@ hr {
     object-position: 0% 0%;
 }
 
-.PortfoiloImg:hover {
+#ecomImg {
     object-position: 0% 0%;
     animation: myfirst 10s linear 0s infinite alternate;
 }
+
+#rainbowitImg {
+    object-position: 0% 0%;
+    animation: myfirst 15s linear 0s infinite alternate;
+}
+
+#smartImg {
+    object-position: 0% 0%;
+    animation: myfirst 5s linear 0s infinite alternate;
+}
+
+#netstormImg {
+    object-position: 0% 0%;
+    animation: myfirst 5s linear 0s infinite alternate;
+}
+
+#carDataImg {
+    object-position: 0% 0%;
+    animation: myfirst 5s linear 0s infinite alternate;
+}
+
+
+/* .PortfoiloImg:hover {} */
 
 @keyframes myfirst {
     0% {
@@ -1221,17 +1246,19 @@ hr {
 .closeDiv {
     /* background-color: linear-gradient(145deg, #1e2024);
     box-shadow: 9px 9px 12px #1c1e22, -9px -9px 12px #262a2e; */
+    width: fit-content;
     background: #c4cfde;
     box-shadow: 1px 1px #b1b1b1, 2px 2px #b1b1b1;
     border-radius: 50%;
-    position: absolute;
-    right: 101px;
-    top: 109px;
+    /* position: relative;
+    left: 502px; */
+    /* left: 173px; */
     /* width: 2.5%;
   height: 5vh; */
     transition: transform background-color box-shadow;
     transition-duration: 0.5s;
     cursor: pointer;
+    height: fit-content;
 }
 
 .closeDiv:hover {

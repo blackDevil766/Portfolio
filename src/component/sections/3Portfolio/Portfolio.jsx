@@ -151,17 +151,16 @@ function Portfolio() {
         return (
             <>
                 <div id="acti" className={props.class} >
-                    <div className="portfolioShower">
 
+                    <div className="portfolioShower">
                         <div className="showImg">
-                            <img className="PortfoiloImg"  src={props.img} alt="" />
+                            <img id={props.id} className="PortfoiloImg" src={props.img} alt="" />
                         </div>
 
                         <div className="showDescribtions">
 
-                            <div onClick={hideTheAction} className="closeDiv">
-                                <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                            </div>
+
+
 
                             <div className="contactShower">
                                 <p className="headTitleOfFlyingDescribtion">Featured - Design</p>
@@ -173,8 +172,16 @@ function Portfolio() {
                                 <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
                                 <button id="signUpBtn" className="btn viewBtn" type="submit"><a href={props.href}>view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
                             </div>
+
+
                         </div>
+
+                        <div onClick={hideTheAction} className="closeDiv">
+                            <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                        </div>
+
                     </div>
+
                 </div>
             </>
         )
@@ -191,6 +198,7 @@ function Portfolio() {
 
 
             <HiddenPart
+                id="ecomImg"
                 class={actionTaken.page1}
                 img="img\portfolioImgs\ecommerce.png"
                 title="Ecommerce App."
@@ -200,6 +208,7 @@ function Portfolio() {
             />
 
             <HiddenPart
+                id="rainbowitImg"
                 class={actionTaken.page2}
                 img="img\portfolioImgs\rainbowit.png"
                 title="Portfoilo Design"
@@ -210,8 +219,9 @@ function Portfolio() {
 
 
             <HiddenPart
+                id="smartImg"
                 class={actionTaken.page3}
-                img="img/smart.png"
+                img="img/portfoiloImgs/smar"
                 title="Agency Design"
                 describ="It a website to show some people who can make a UI/UX, and It's my first project and i just saw it somewhere and i just traditon it, "
                 language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS"
@@ -219,6 +229,7 @@ function Portfolio() {
             />
 
             <HiddenPart
+                id="netstormImg"
                 class={actionTaken.page4}
                 img="img/netstorm.png"
                 title="Netstorm"
@@ -237,6 +248,7 @@ function Portfolio() {
             />
 
             <HiddenPart
+                id="carDataImg"
                 class={actionTaken.page6}
                 img="img/carData.png"
                 title="Car Details"
@@ -309,7 +321,7 @@ function Portfolio() {
 
             </div>
 
-           
+
         </div>
     )
 }

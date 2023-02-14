@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <NavBar />
       <WelcomeToMyWorld />
-      <div className="onlyAbout">
+      <div className="onlyAbout" >
         <AboutMe />
       </div>
       <Resume />

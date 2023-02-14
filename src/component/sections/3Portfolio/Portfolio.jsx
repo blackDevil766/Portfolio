@@ -78,18 +78,7 @@ function Portfolio() {
         })
     }
 
-    function Showw6() {
-        setActionTaken(() => {
-            return {
-                page1: "hideTheFlyDiv1",
-                page2: "hideTheFlyDiv2",
-                page3: "hideTheFlyDiv3",
-                page4: "hideTheFlyDiv4",
-                page5: "hideTheFlyDiv5",
-                page6: "flyingDiv",
-            }
-        })
-    }
+
 
     function hideTheAction() {
         setActionTaken(() => {
@@ -153,14 +142,16 @@ function Portfolio() {
                 <div id="acti" className={props.class} >
 
                     <div className="portfolioShower">
+
+                        <div onClick={hideTheAction} className="closeDiv">
+                            <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                        </div>
+
                         <div className="showImg">
                             <img id={props.id} className="PortfoiloImg" src={props.img} alt="" />
                         </div>
 
                         <div className="showDescribtions">
-
-
-
 
                             <div className="contactShower">
                                 <p className="headTitleOfFlyingDescribtion">Featured - Design</p>
@@ -176,9 +167,6 @@ function Portfolio() {
 
                         </div>
 
-                        <div onClick={hideTheAction} className="closeDiv">
-                            <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                        </div>
 
                     </div>
 
@@ -197,7 +185,181 @@ function Portfolio() {
 
 
 
-            <HiddenPart
+            <div id="acti" className={actionTaken.page1} >
+
+                <div className="portfolioShower">
+
+                    <div onClick={hideTheAction} className="closeDiv">
+                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                    </div>
+
+                    <div className="showImg">
+                        <img id="ecomImg" className="PortfoiloImg" src="img\portfolioImgs\ecommerce.png" alt="" />
+                    </div>
+
+                    <div className="showDescribtions">
+
+                        <div className="contactShower">
+                            <p className="headTitleOfFlyingDescribtion">Featured - Design</p>
+                            <h3 className="titleOfFlyingDescribtion">Ecommerce App.</h3>
+                            <p className="md-typo-of-flying-describtion">sell products, its show product that owner add it and its have a payment method so that we can sell online</p>
+                            <p className="md-typo-of-flying-describtion2">I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS - PYTHON - DEJANGO</p>
+                        </div>
+                        <div className="buttons">
+                            <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
+                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="Ecommerce">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div id="acti" className={actionTaken.page2} >
+
+                <div className="portfolioShower">
+
+                    <div onClick={hideTheAction} className="closeDiv">
+                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                    </div>
+
+                    <div className="showImg">
+                        <img id="rainbowitImg" className="PortfoiloImg" src="img\portfolioImgs\rainbowit.png" alt="" />
+                    </div>
+
+                    <div className="showDescribtions">
+
+                        <div className="contactShower">
+                            <p className="headTitleOfFlyingDescribtion">Featured - Design</p>
+                            <h3 className="titleOfFlyingDescribtion">Portfoilo Design</h3>
+                            <p className="md-typo-of-flying-describtion">It a website to show some people who can make a UI/UX, and It's my first project and i just saw it somewhere and i just traditon it, </p>
+                            <p className="md-typo-of-flying-describtion2">I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS</p>
+                        </div>
+                        <div className="buttons">
+                            <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
+                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="agency">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div id="acti" className={actionTaken.page3}>
+
+                <div className="portfolioShower">
+
+                    <div onClick={hideTheAction} className="closeDiv">
+                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                    </div>
+
+                    <div className="showImg">
+                        <img id="smartImg" className="PortfoiloImg" src="img\portfolioImgs\smart.png" alt="" />
+                    </div>
+
+                    <div className="showDescribtions">
+
+                        <div className="contactShower">
+                            <p className="headTitleOfFlyingDescribtion">Featured - Design</p>
+                            <h3 className="titleOfFlyingDescribtion">Agency Design</h3>
+                            <p className="md-typo-of-flying-describtion">It a website to show some people who can make a UI/UX, and It's my first project and i just saw it somewhere and i just traditon it, </p>
+                            <p className="md-typo-of-flying-describtion2">I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS</p>
+                        </div>
+                        <div className="buttons">
+                            <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
+                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="agency">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div id="acti" className={actionTaken.page4} >
+
+                <div className="portfolioShower">
+
+                    <div onClick={hideTheAction} className="closeDiv">
+                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                    </div>
+
+                    <div className="showImg">
+                        <img id="netstormImg" className="PortfoiloImg" src="img/netstorm.png" alt="" />
+                    </div>
+
+                    <div className="showDescribtions">
+
+                        <div className="contactShower">
+                            <p className="headTitleOfFlyingDescribtion">Featured - Design</p>
+                            <h3 className="titleOfFlyingDescribtion">Netstorm</h3>
+                            <p className="md-typo-of-flying-describtion">I don't remember what was the purpose of this website but i made like the real one from themesforcet, i made it to improve my skills in frontend i hope you like the design</p>
+                            <p className="md-typo-of-flying-describtion2">I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS</p>
+                        </div>
+                        <div className="buttons">
+                            <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
+                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="netstorm">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div id="acti" className={actionTaken.page5} >
+
+                <div className="portfolioShower">
+
+                    <div onClick={hideTheAction} className="closeDiv">
+                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                    </div>
+
+                    <div className="showImg">
+                        <img id="carDetails" className="PortfoiloImg" src="img\portfolioImgs\carDetails.png" alt="" />
+                    </div>
+
+                    <div className="showDescribtions">
+
+                        <div className="contactShower">
+                            <p className="headTitleOfFlyingDescribtion">Featured - Design</p>
+                            <h3 className="titleOfFlyingDescribtion">Car Details</h3>
+                            <p className="md-typo-of-flying-describtion">It was a task i took it from someone who help me to improve my self and find a job</p>
+                            <p className="md-typo-of-flying-describtion2">I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS</p>
+                        </div>
+                        <div className="buttons">
+                            <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
+                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="CarDetails">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            {/* <HiddenPart
                 id="ecomImg"
                 class={actionTaken.page1}
                 img="img\portfolioImgs\ecommerce.png"
@@ -205,9 +367,9 @@ function Portfolio() {
                 describ="sell products, its show product that owner add it and its have a payment method so that we can sell online"
                 language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS - PYTHON - DEJANGO"
                 href="Ecommerce"
-            />
+            /> */}
 
-            <HiddenPart
+            {/* <HiddenPart
                 id="rainbowitImg"
                 class={actionTaken.page2}
                 img="img\portfolioImgs\rainbowit.png"
@@ -215,20 +377,20 @@ function Portfolio() {
                 describ="Portfoilo that show your skills and show it to the world, i made it to prove to my self that i can make anything and to prove to you what am cabable for."
                 language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS"
                 href="inbio"
-            />
+            /> */}
 
 
-            <HiddenPart
+            {/* <HiddenPart
                 id="smartImg"
                 class={actionTaken.page3}
-                img="img/portfoiloImgs/smar"
+                img="img\portfolioImgs\smart.png"
                 title="Agency Design"
                 describ="It a website to show some people who can make a UI/UX, and It's my first project and i just saw it somewhere and i just traditon it, "
                 language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS"
                 href="agency"
-            />
+            /> */}
 
-            <HiddenPart
+            {/* <HiddenPart
                 id="netstormImg"
                 class={actionTaken.page4}
                 img="img/netstorm.png"
@@ -236,27 +398,17 @@ function Portfolio() {
                 describ="I don't remember what was the purpose of this website but i made like the real one from themesforcet, i made it to improve my skills in frontend i hope you like the design "
                 language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS"
                 href="netstorm"
-            />
+            /> */}
 
-            <HiddenPart
+            {/* <HiddenPart
+                id="carDetails"
                 class={actionTaken.page5}
-                img="img/carData.png"
+                img="img\portfolioImgs\carDetails.png"
                 title="Car Details"
                 describ="It was a task i took it from someone who help me to improve my self and find a job"
                 language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS"
                 href="CarDetails"
-            />
-
-            <HiddenPart
-                id="carDataImg"
-                class={actionTaken.page6}
-                img="img/carData.png"
-                title="Car Details"
-                describ="It was a task i took it from someone who help me to improve my self and find a job"
-                language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS"
-                href="CarDetails"
-            />
-
+            /> */}
 
 
 

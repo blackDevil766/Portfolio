@@ -30,7 +30,8 @@ function WelcomeToMyWorld() {
                 </div>
 
                 <div className="space welcomeToMyWorldSection-right">
-                    <img data-aos-anchor-placement="center-center" className="personal-img" src="img\portfolioImg.png" alt="" />
+                    <img data-aos-anchor-placement="center-center" className="personal-img" src="img\portfolioImgs\PortfoiloImg.png" alt="" />
+                    {/* <img data-aos-anchor-placement="center-center" className="personal-img" src="img\portfolioImg.png" alt="" /> */}
                 </div>
             </div>
             <img className="settingCharacters" src="img\welcomeToAbout1.png" alt="" />

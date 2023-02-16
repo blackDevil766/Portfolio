@@ -49,36 +49,6 @@ function Resume() {
         }
     }
 
-    {/* resume3 */ }
-
-
-    function clicked3(e) {
-        if (changes.change3 === "") {
-            setChanges(()=> {
-                return({
-                    change1: "",
-                    change2: "",
-                    change3: "active",
-                    change4: ""
-                })
-            })
-        }
-    }
-
-    {/* resume4 */ }
-
-    function clicked4(e) {
-        if (changes.change4 === "") {
-            setChanges(()=> {
-                return({
-                    change1: "",
-                    change2: "",
-                    change3: "",
-                    change4: "active"
-                })
-            })
-        }
-    }
 
 
     const [sets, setSets] = useState(() => {
@@ -95,11 +65,7 @@ function Resume() {
         setSets(() => {
             return ({
                 del1: "HideEducation",
-                del2: "ShowProfessional fadeIt",
-                del3: "HideExperiences",
-                del4: "HideInterview"
-
-
+                del2: "ShowProfessional fadeIt"
             })
         })
     }
@@ -108,37 +74,13 @@ function Resume() {
         setSets(() => {
             return ({
                 del1: "ShowEducation",
-                del2: "HideProfessional",
-                del3: "HideExperiences",
-                del4: "HideInterview"
-
+                del2: "HideProfessional"
             })
         })
     }
 
 
-    function ShowExperiences() {
-        setSets(() => {
-            return ({
-                del1: "HideEducation",
-                del2: "HideProfessional",
-                del3: "ShowExperiences",
-                del4: "HideInterview"
-            })
-        })
-    }
 
-
-    function Interviews() {
-        setSets(() => {
-            return ({
-                del1: "HideEducation",
-                del2: "HideProfessional",
-                del3: "HideExperiences",
-                del4: "ShowInterview"
-            })
-        })
-    }
 
     return (
         <div id="resume" className="resume-container">
@@ -163,24 +105,12 @@ function Resume() {
                         <h1 id={changes.change2} onClick={clicked2} className="choosenTitle">Professional Skills</h1>
                     </div>
 
-                    {/* resume3 */}
-
-                    {/* <div onClick={ShowExperiences} className="resumeCreator">
-                        <h1 id={changes.change3} onClick={clicked3} className="choosenTitle">Experience</h1>
-                    </div> */}
-
-                    {/* resume4 */}
-                    {/* <div onClick={Interviews} className="resumeCreator">
-                        <h1 id={changes.change4} onClick={clicked4} className="choosenTitle">Interview</h1>
-                    </div> */}
                 </div>
             </div>
 
             <div className="Resume-section">
                 <Eduction class={sets.del1} />
                 <ProfessionalSkills class={sets.del2} />
-                <Experience class={sets.del3} />
-                <Interview class={sets.del4} />
             </div>
 
         </div>

@@ -47,7 +47,7 @@ function Portfolio() {
                 page2: "hideTheFlyDiv2",
                 page3: "flyingDiv",
                 page4: "hideTheFlyDiv4",
-                page6: "hideTheFlyDiv6",
+                page5: "hideTheFlyDiv5",
             }
         })
     }
@@ -136,44 +136,44 @@ function Portfolio() {
     // }
 
 
-    function HiddenPart(props) {
-        return (
-            <>
-                <div id="acti" className={props.class} >
+    // function HiddenPart(props) {
+    //     return (
+    //         <>
+    //             <div id="acti" className={props.class} >
 
-                    <div className="portfolioShower">
+    //                 <div className="portfolioShower">
 
-                        <div onClick={hideTheAction} className="closeDiv">
-                            <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                        </div>
+    //                     <div onClick={hideTheAction} className="closeDiv">
+    //                         <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+    //                     </div>
 
-                        <div className="showImg">
-                            <img id={props.id} className="PortfoiloImg" src={props.img} alt="" />
-                        </div>
+    //                     <div className="showImg">
+    //                         <img id={props.id} className="PortfoiloImg" src={props.img} alt="" />
+    //                     </div>
 
-                        <div className="showDescribtions">
+    //                     <div className="showDescribtions">
 
-                            <div className="contactShower">
-                                <p className="headTitleOfFlyingDescribtion">Featured - Design</p>
-                                <h3 className="titleOfFlyingDescribtion">{props.title}</h3>
-                                <p className="md-typo-of-flying-describtion">{props.describ}</p>
-                                <p className="md-typo-of-flying-describtion2">{props.language}</p>
-                            </div>
-                            <div className="buttons">
-                                <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
-                                <button id="signUpBtn" className="btn viewBtn" type="submit"><a href={props.href}>view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
-                            </div>
-
-
-                        </div>
+    //                         <div className="contactShower">
+    //                             <p className="headTitleOfFlyingDescribtion">Featured - Design</p>
+    //                             <h3 className="titleOfFlyingDescribtion">{props.title}</h3>
+    //                             <p className="md-typo-of-flying-describtion">{props.describ}</p>
+    //                             <p className="md-typo-of-flying-describtion2">{props.language}</p>
+    //                         </div>
+    //                         <div className="buttons">
+    //                             <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
+    //                             <button id="signUpBtn" className="btn viewBtn" type="submit"><a href={props.href}>view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+    //                         </div>
 
 
-                    </div>
+    //                     </div>
 
-                </div>
-            </>
-        )
-    }
+
+    //                 </div>
+
+    //             </div>
+    //         </>
+    //     )
+    // }
 
     return (
         <div id="portfolio" className="Portfolio-Container1">
@@ -189,9 +189,7 @@ function Portfolio() {
 
                 <div className="portfolioShower">
 
-                    <div onClick={hideTheAction} className="closeDiv">
-                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                    </div>
+
 
                     <div className="showImg">
                         <img id="ecomImg" className="PortfoiloImg" src="img\portfolioImgs\ecommerce.png" alt="" />
@@ -213,7 +211,9 @@ function Portfolio() {
 
                     </div>
 
-
+                    <div onClick={hideTheAction} className="closeDiv">
+                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                    </div>
                 </div>
 
             </div>
@@ -223,9 +223,7 @@ function Portfolio() {
 
                 <div className="portfolioShower">
 
-                    <div onClick={hideTheAction} className="closeDiv">
-                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                    </div>
+
 
                     <div className="showImg">
                         <img id="rainbowitImg" className="PortfoiloImg" src="img\portfolioImgs\rainbowit.png" alt="" />
@@ -247,6 +245,9 @@ function Portfolio() {
 
                     </div>
 
+                    <div onClick={hideTheAction} className="closeDiv">
+                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                    </div>
 
                 </div>
 
@@ -256,9 +257,7 @@ function Portfolio() {
 
                 <div className="portfolioShower">
 
-                    <div onClick={hideTheAction} className="closeDiv">
-                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                    </div>
+
 
                     <div className="showImg">
                         <img id="smartImg" className="PortfoiloImg" src="img\portfolioImgs\smart.png" alt="" />
@@ -280,6 +279,9 @@ function Portfolio() {
 
                     </div>
 
+                    <div onClick={hideTheAction} className="closeDiv">
+                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                    </div>
 
                 </div>
 
@@ -293,9 +295,7 @@ function Portfolio() {
 
                 <div className="portfolioShower">
 
-                    <div onClick={hideTheAction} className="closeDiv">
-                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                    </div>
+
 
                     <div className="showImg">
                         <img id="netstormImg" className="PortfoiloImg" src="img/netstorm.png" alt="" />
@@ -317,7 +317,9 @@ function Portfolio() {
 
                     </div>
 
-
+                    <div onClick={hideTheAction} className="closeDiv">
+                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                    </div>
                 </div>
 
             </div>
@@ -329,9 +331,7 @@ function Portfolio() {
 
                 <div className="portfolioShower">
 
-                    <div onClick={hideTheAction} className="closeDiv">
-                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                    </div>
+
 
                     <div className="showImg">
                         <img id="carDetails" className="PortfoiloImg" src="img\portfolioImgs\carDetails.png" alt="" />
@@ -353,7 +353,9 @@ function Portfolio() {
 
                     </div>
 
-
+                    <div onClick={hideTheAction} className="closeDiv">
+                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                    </div>
                 </div>
 
             </div>

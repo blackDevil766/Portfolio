@@ -45,7 +45,7 @@ function Eduction(props) {
         </div>
 
         <div className="left-details">
-            <p className="p-detalis">2007 - 2010</p>
+            <p className="p-detalis">2022 - 2023</p>
             <h4 className="h-details">Job Experience</h4>
 
 

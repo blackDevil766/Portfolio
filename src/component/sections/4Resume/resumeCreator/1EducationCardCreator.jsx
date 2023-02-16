@@ -3,7 +3,7 @@ import React from "react";
 function Card(props) {
     return (
         <div className="personal-container">
-            <div data-aos={props.animate} data-aos-duration="1000" className="personal-portfolio">
+            <div className="personal-portfolio">
                 <div  className={props.ClassContainer}>
 
                     <div  className="personal-header">

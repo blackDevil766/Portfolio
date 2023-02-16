@@ -3,9 +3,16 @@ body {
     /* background-color: rgb(216, 216, 216); */
     overflow-x: hidden;
 }
-#welcomeToMyWebSite, #resume, .navbar,  .Portfolio-Container1, .contactSection, .footer-container, #preLoader{
+
+#welcomeToMyWebSite,
+#resume,
+.navbar,
+.Portfolio-Container1,
+.contactSection,
+.footer-container,
+#preLoader {
     background-color: #2c5f54 !important;
-} 
+}
 
 a {
     color: #3bb74a;
@@ -1020,7 +1027,6 @@ hr {
     filter: blur(1px);
 } */
 
-
 .hideTheFlyDiv1,
 .hideTheFlyDiv2,
 .hideTheFlyDiv3,
@@ -1043,20 +1049,22 @@ hr {
 
 .flyingDiv {
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
+    padding: 45px;
     position: fixed;
-    padding: 150px 0px 400px 0px;
+    margin: 0 auto;
     top: 0px;
     z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(15px);
     visibility: visible;
     opacity: 1;
     transition: all 0.4s;
-    overflow-y:scroll;
-    /* background: #6d6c6c; */
+    overflow-y: scroll;
+    background: #6d6c6c7c;
+    /* backdrop-filter: blur(15px); */
+    /* padding: 150px 0px 400px 0px; */
     /* overflow: auto; */
     /* transition: visibility opacity 0.4s; */
     /* transition-property: visibility opacity; */
@@ -1064,6 +1072,7 @@ hr {
     /* transition: all visibility opacity 0.4s; */
     /* transition-duration: 0.4s; */
 }
+
 
 /* .flyingDiv:focus body {
     overflow: hidden;
@@ -1079,7 +1088,6 @@ hr {
 } */
 
 
-
 /* #flyingDiv {
     overflow: auto;
 } */
@@ -1089,7 +1097,7 @@ hr {
     /* box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e; */
     background: #fffcee;
     box-shadow: 1px 1px #b1b1b1, 2px 2px #b1b1b1, 3px 3px #b1b1b1, 4px 4px #b1b1b1, 5px 5px #b1b1b1, 6px 6px #b1b1b1, 7px 7px #b1b1b1, 8px 8px #b1b1b1;
-    width: 92%;
+    /* width: 92%; */
     /* height: 50%; */
     margin: 90px auto;
     padding: 45px;
@@ -1116,18 +1124,19 @@ hr {
     object-fit: cover;
     overflow: hidden;
     object-position: 0% 0%;
+    cursor: pointer;
 }
 
-#ecomImg:hover  {
+#ecomImg:hover {
     object-position: 0% 0%;
     transition: all 0.4s;
-    animation: myfirst 10s linear 0s infinite alternate;
+    animation: myfirst 8s linear 0s infinite alternate;
 }
 
-#rainbowitImg:hover  {
+#rainbowitImg:hover {
     object-position: 0% 0%;
     transition: all 0.4s;
-    animation: myfirst 25s linear 0s infinite alternate;
+    animation: myfirst 23s linear 0s infinite alternate;
 }
 
 #smartImg:hover {
@@ -1137,16 +1146,16 @@ hr {
     animation: myfirst 15s linear 0s infinite alternate;
 }
 
-#netstormImg:hover  {
+#netstormImg:hover {
     object-position: 0% 0%;
     transition: all 0.4s;
     animation: myfirst 5s linear 0s infinite alternate;
 }
 
-#carDetails:hover  {
+#carDetails:hover {
     object-position: 0% 0%;
     transition: all 0.4s;
-    animation: myfirst 3s linear 0s infinite alternate;
+    animation: myfirst 1.5s linear 0s infinite alternate;
 }
 
 
@@ -1280,8 +1289,8 @@ hr {
     transition-duration: 0.5s;
     cursor: pointer;
     height: fit-content;
-    position: absolute;
-    right: 111px;
+    /* position: absolute; */
+    /* right: 111px; */
     transform: translateY(-28px);
 }
 
@@ -2290,7 +2299,6 @@ hr {
     .welcomeToMyWorldSection-continer {
         display: inline-table;
         width: 100%;
-
     }
     .description .icons {
         width: 70px;
@@ -2368,6 +2376,10 @@ hr {
     .about-left-sectiom {
         width: 100%;
     }
+    #AboutMe {
+        position: relative;
+        top: 100px;
+    }
     /* 
 
 
@@ -2422,15 +2434,12 @@ hr {
     .showDescribtions .buttons {
         margin: 0;
     }
-
-    .PortfoiloImg{
+    .PortfoiloImg {
         cursor: pointer;
     }
-
     .portfolio-container2 {
         max-width: 100%;
     }
-
     /**********************
   * my resume SECTION *
 ***********************/
@@ -2504,6 +2513,9 @@ hr {
         width: 100%;
         margin-left: 12px;
         padding-bottom: 41px;
+    }
+    .social-icone {
+        display: block;
     }
     /******************
  * FOOTER SECTION *

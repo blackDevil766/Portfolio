@@ -298,7 +298,7 @@ function Portfolio() {
 
 
                     <div className="showImg">
-                        <img id="netstormImg" className="PortfoiloImg" src="img/netstorm.png" alt="" />
+                        <img id="netstormImg" className="PortfoiloImg" src="img\portfolioImgs\netstorm.png" alt="" />
                     </div>
 
                     <div className="showDescribtions">

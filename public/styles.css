@@ -1149,7 +1149,7 @@ hr {
 #netstormImg:hover {
     object-position: 0% 0%;
     transition: all 0.4s;
-    animation: myfirst 5s linear 0s infinite alternate;
+    animation: myfirst 8s linear 0s infinite alternate;
 }
 
 #carDetails:hover {

@@ -205,7 +205,7 @@ function Portfolio() {
                         </div>
                         <div className="buttons">
                             <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
-                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="Ecommerce">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="https://github.com/blackDevil766/market">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
                         </div>
 
 
@@ -239,7 +239,7 @@ function Portfolio() {
                         </div>
                         <div className="buttons">
                             <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
-                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="agency">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="https://github.com/blackDevil766/Rainbowit">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
                         </div>
 
 
@@ -273,7 +273,7 @@ function Portfolio() {
                         </div>
                         <div className="buttons">
                             <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
-                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="agency">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="https://github.com/blackDevil766/SmartProject">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
                         </div>
 
 
@@ -311,7 +311,7 @@ function Portfolio() {
                         </div>
                         <div className="buttons">
                             <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
-                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="netstorm">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="https://github.com/blackDevil766/Netstorm">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
                         </div>
 
 
@@ -347,7 +347,7 @@ function Portfolio() {
                         </div>
                         <div className="buttons">
                             <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
-                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="CarDetails">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="https://github.com/blackDevil766/Car-Details">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
                         </div>
 
 

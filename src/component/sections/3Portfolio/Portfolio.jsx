@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CardCreator from "./portfolioCreator";
 import { portfolioImgs } from "./portfolioCreator";
+import Tilt from 'react-parallax-tilt';
 
 function Portfolio() {
 
@@ -186,7 +187,6 @@ function Portfolio() {
 
 
             <div id="acti" className={actionTaken.page1} >
-
                 <div className="portfolioShower">
 
 
@@ -204,8 +204,12 @@ function Portfolio() {
                             <p className="md-typo-of-flying-describtion2">I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS - PYTHON - DEJANGO</p>
                         </div>
                         <div className="buttons">
-                            <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
-                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="https://github.com/blackDevil766/market">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                            <Tilt >
+                                <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
+                            </Tilt>
+                            <Tilt >
+                            <a href="https://github.com/blackDevil766/market"><button id="signUpBtn" className="btn viewBtn" type="submit">view project <img src="\img\right-arrow.svg" alt="" /> </button></a>
+                            </Tilt>
                         </div>
 
 
@@ -215,7 +219,6 @@ function Portfolio() {
                         <img className="closeIco" src="\img\closeIcon.svg" alt="" />
                     </div>
                 </div>
-
             </div>
 
 
@@ -238,8 +241,12 @@ function Portfolio() {
                             <p className="md-typo-of-flying-describtion2">I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS</p>
                         </div>
                         <div className="buttons">
-                            <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
-                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="https://github.com/blackDevil766/Rainbowit">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                            <Tilt >
+                                <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
+                            </Tilt>
+                            <Tilt >
+                                <a href="https://github.com/blackDevil766/Rainbowit">   <button id="signUpBtn" className="btn viewBtn" type="submit">view project <img src="\img\right-arrow.svg" alt="" /> </button></a>
+                            </Tilt>
                         </div>
 
 
@@ -272,8 +279,12 @@ function Portfolio() {
                             <p className="md-typo-of-flying-describtion2">I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS</p>
                         </div>
                         <div className="buttons">
-                            <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
-                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="https://github.com/blackDevil766/SmartProject">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                            <Tilt >
+                                <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
+                            </Tilt>
+                            <Tilt >
+                                <a href="https://github.com/blackDevil766/SmartProject"><button id="signUpBtn" className="btn viewBtn" type="submit">view project <img src="\img\right-arrow.svg" alt="" /> </button></a>
+                            </Tilt>
                         </div>
 
 
@@ -310,8 +321,12 @@ function Portfolio() {
                             <p className="md-typo-of-flying-describtion2">I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS</p>
                         </div>
                         <div className="buttons">
-                            <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
-                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="https://github.com/blackDevil766/Netstorm">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                            <Tilt >
+                                <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
+                            </Tilt>
+                            <Tilt >
+                                <a href="https://github.com/blackDevil766/Netstorm"><button id="signUpBtn" className="btn viewBtn" type="submit">view project <img src="\img\right-arrow.svg" alt="" /> </button></a>
+                            </Tilt>
                         </div>
 
 
@@ -346,8 +361,12 @@ function Portfolio() {
                             <p className="md-typo-of-flying-describtion2">I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS</p>
                         </div>
                         <div className="buttons">
-                            <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
-                            <button id="signUpBtn" className="btn viewBtn" type="submit"><a href="https://github.com/blackDevil766/Car-Details">view project <img src="\img\right-arrow.svg" alt="" /> </a></button>
+                            <Tilt >
+                                <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
+                            </Tilt>
+                            <Tilt >
+                                <a href="https://github.com/blackDevil766/Car-Details"><button id="signUpBtn" className="btn viewBtn" type="submit">view project <img src="\img\right-arrow.svg" alt="" /> </button></a>
+                            </Tilt>
                         </div>
 
 
@@ -369,9 +388,9 @@ function Portfolio() {
                 describ="sell products, its show product that owner add it and its have a payment method so that we can sell online"
                 language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS - PYTHON - DEJANGO"
                 href="Ecommerce"
-            /> */}
+            />
 
-            {/* <HiddenPart
+            <HiddenPart
                 id="rainbowitImg"
                 class={actionTaken.page2}
                 img="img\portfolioImgs\rainbowit.png"
@@ -379,10 +398,10 @@ function Portfolio() {
                 describ="Portfoilo that show your skills and show it to the world, i made it to prove to my self that i can make anything and to prove to you what am cabable for."
                 language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS"
                 href="inbio"
-            /> */}
+            />
 
 
-            {/* <HiddenPart
+            <HiddenPart
                 id="smartImg"
                 class={actionTaken.page3}
                 img="img\portfolioImgs\smart.png"
@@ -390,9 +409,9 @@ function Portfolio() {
                 describ="It a website to show some people who can make a UI/UX, and It's my first project and i just saw it somewhere and i just traditon it, "
                 language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS"
                 href="agency"
-            /> */}
+            />
 
-            {/* <HiddenPart
+            <HiddenPart
                 id="netstormImg"
                 class={actionTaken.page4}
                 img="img/netstorm.png"
@@ -400,9 +419,9 @@ function Portfolio() {
                 describ="I don't remember what was the purpose of this website but i made like the real one from themesforcet, i made it to improve my skills in frontend i hope you like the design "
                 language="I made it using HTML - CSS - JSX - BOOTSTRAP - ES6 - REACT JS"
                 href="netstorm"
-            /> */}
+            />
 
-            {/* <HiddenPart
+            <HiddenPart
                 id="carDetails"
                 class={actionTaken.page5}
                 img="img\portfolioImgs\carDetails.png"

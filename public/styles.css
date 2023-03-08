@@ -270,8 +270,11 @@ p {
 
 #changeColor {
     transform: translateX(-11px);
-    padding-right: 41px !important;
-    padding-left: 320px;
+    /* padding-right: 41px !important; */
+    /* padding-left: 320px; */
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 #changeColor:hover #othersNavItem {
@@ -413,7 +416,8 @@ p {
 
 .hireMe-part {
     display: flex;
-    gap: 20px;
+    gap: 8px;
+    width: 16%;
 }
 
 
@@ -1127,32 +1131,32 @@ hr {
     cursor: pointer;
 }
 
-#ecomImg:hover {
+.flyingDiv:hover #ecomImg {
     object-position: 0% 0%;
     transition: all 0.4s;
     animation: myfirst 8s linear 0s infinite alternate;
 }
 
-#rainbowitImg:hover {
+.flyingDiv:hover #rainbowitImg {
     object-position: 0% 0%;
     transition: all 0.4s;
     animation: myfirst 23s linear 0s infinite alternate;
 }
 
-#smartImg:hover {
+.flyingDiv:hover #smartImg {
     object-position: 0% 0%;
     transition: all 0.4s;
     animation-direction: alternate;
     animation: myfirst 15s linear 0s infinite alternate;
 }
 
-#netstormImg:hover {
+.flyingDiv:hover #netstormImg {
     object-position: 0% 0%;
     transition: all 0.4s;
     animation: myfirst 8s linear 0s infinite alternate;
 }
 
-#carDetails:hover {
+.flyingDiv:hover #carDetails {
     object-position: 0% 0%;
     transition: all 0.4s;
     animation: myfirst 1.5s linear 0s infinite alternate;
@@ -1201,7 +1205,7 @@ hr {
 
 .titleOfFlyingDescribtion {
     font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+    color: #b4b4b4;
     margin-bottom: 20px;
     font-size: 34px;
     font-weight: 700;
@@ -1851,7 +1855,7 @@ hr {
     font-size: 18px;
     margin-top: 7px;
     margin-bottom: 15px;
-    color: #fff;
+    color: #787878;
 }
 
 .contact-img:hover {
@@ -1862,7 +1866,7 @@ hr {
 .left-contact .Cards-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #c4cfde;
+    color: #7d7f82;
     font-size: 29px;
     line-height: 34px;
     margin-top: 10px;
@@ -1901,7 +1905,7 @@ hr {
 
 .phone a,
 .mail a {
-    color: #c4cfde;
+    color: #525252;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 18px;

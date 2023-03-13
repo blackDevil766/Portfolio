@@ -21,7 +21,7 @@ function NavBar(props) {
         <nav  id={onscrolls} className ="navbar navbar-expand-lg navbar-light ">
             <div className ="container-fluid ">
 
-                <a data-aos="fade-down" data-aos-duration="1500" className ="navbar-brand navLogo" href="#">
+                <a className ="navbar-brand navLogo" href="#">
                     <h3 data-aos="fade-down" data-aos-duration="2000" className="TitleName">
                         {/* <img src="img/sleep2.svg" alt="" /> */}
                     </h3>
@@ -42,14 +42,14 @@ function NavBar(props) {
                 <div className ="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul id="changeColor" className ="navbar-nav me-auto mb-2 mb-lg-0">
 
-                        <li data-aos="fade-down" data-aos-duration="1000" className="nav-item">
+                        <li className="nav-item">
                             <a id="homeItem" className="nav-link active" aria-current="page" href="#">HOME</a>
                         </li>
 
                         {/* <Item time ="1500" text="ABOUT" linkIt = "#AboutMe"  /> */}
-                        <Item time ="2000" text="RESUME" linkIt = "#resume"    /> 
-                        <Item time ="2500" text="PORTFOLIO" linkIt = "#portfolio" /> 
-                        <Item time ="3000" text="CONTACT" linkIt = "#contact"   /> 
+                        <Item text="RESUME" linkIt = "#resume"    /> 
+                        <Item text="PORTFOLIO" linkIt = "#portfolio" /> 
+                        <Item text="CONTACT" linkIt = "#contact"   /> 
                         {/* <Item text="CLIENTS" linkIt = "#clients"   /> */}
                         {/* <Item text="PRICING" linkIt = "#pricing"   /> */}
                         {/* <Item text="BLOG" linkIt = "#blog"      />  */}
@@ -58,14 +58,14 @@ function NavBar(props) {
 
                     </ul>
                     <div className="hireMe-part">
-                        <a data-aos="fade-down" data-aos-duration="1500" href="img\Ahmed'sResume.pdf" target="_blank" download>
+                        <a href="img\Ahmed'sResume.pdf" target="_blank" download>
                             <button  id="NavSignUpBtn" className="btn" type="submit">
                                     Resume
                             </button>
                         </a>
 
-                        <a data-aos="fade-down" data-aos-duration="1500" href="#hireMe">
-                            <button id="NavSignUpBtn" className="btn" type="submit">HIRE ME</button><div className="hvr-icon"></div>
+                        <a href="#hireMe">
+                            <button id="NavSignUpBtn" className="btn" type="submit">Hire me</button><div className="hvr-icon"></div>
                         </a> 
                     </div>
 

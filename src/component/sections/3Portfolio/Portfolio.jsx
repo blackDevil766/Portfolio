@@ -189,7 +189,9 @@ function Portfolio() {
             <div id="acti" className={actionTaken.page1} >
                 <div className="portfolioShower">
 
-
+                    <div onClick={hideTheAction} className="closeDiv">
+                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                    </div>
 
                     <div className="showImg">
                         <img id="ecomImg" className="PortfoiloImg" src="img\portfolioImgs\ecommerce.png" alt="" />
@@ -208,16 +210,14 @@ function Portfolio() {
                                 <button id="signUpBtn" className="btn likeBtn" type="submit">Like this <img src="\img\like.svg" alt="" /></button>
                             </Tilt>
                             <Tilt >
-                            <a href="https://github.com/blackDevil766/market"><button id="signUpBtn" className="btn viewBtn" type="submit">view project <img src="\img\right-arrow.svg" alt="" /> </button></a>
+                                <a href="https://github.com/blackDevil766/market"><button id="signUpBtn" className="btn viewBtn" type="submit">view project <img src="\img\right-arrow.svg" alt="" /> </button></a>
                             </Tilt>
                         </div>
 
 
                     </div>
 
-                    <div onClick={hideTheAction} className="closeDiv">
-                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                    </div>
+
                 </div>
             </div>
 
@@ -226,7 +226,9 @@ function Portfolio() {
 
                 <div className="portfolioShower">
 
-
+                    <div onClick={hideTheAction} className="closeDiv">
+                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                    </div>
 
                     <div className="showImg">
                         <img id="rainbowitImg" className="PortfoiloImg" src="img\portfolioImgs\rainbowit.png" alt="" />
@@ -252,9 +254,7 @@ function Portfolio() {
 
                     </div>
 
-                    <div onClick={hideTheAction} className="closeDiv">
-                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                    </div>
+
 
                 </div>
 
@@ -264,7 +264,9 @@ function Portfolio() {
 
                 <div className="portfolioShower">
 
-
+                    <div onClick={hideTheAction} className="closeDiv">
+                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                    </div>
 
                     <div className="showImg">
                         <img id="smartImg" className="PortfoiloImg" src="img\portfolioImgs\smart.png" alt="" />
@@ -290,9 +292,7 @@ function Portfolio() {
 
                     </div>
 
-                    <div onClick={hideTheAction} className="closeDiv">
-                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                    </div>
+
 
                 </div>
 
@@ -306,7 +306,9 @@ function Portfolio() {
 
                 <div className="portfolioShower">
 
-
+                    <div onClick={hideTheAction} className="closeDiv">
+                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                    </div>
 
                     <div className="showImg">
                         <img id="netstormImg" className="PortfoiloImg" src="img\portfolioImgs\netstorm.png" alt="" />
@@ -332,9 +334,7 @@ function Portfolio() {
 
                     </div>
 
-                    <div onClick={hideTheAction} className="closeDiv">
-                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                    </div>
+
                 </div>
 
             </div>
@@ -346,7 +346,9 @@ function Portfolio() {
 
                 <div className="portfolioShower">
 
-
+                    <div onClick={hideTheAction} className="closeDiv">
+                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
+                    </div>
 
                     <div className="showImg">
                         <img id="carDetails" className="PortfoiloImg" src="img\portfolioImgs\carDetails.png" alt="" />
@@ -372,9 +374,7 @@ function Portfolio() {
 
                     </div>
 
-                    <div onClick={hideTheAction} className="closeDiv">
-                        <img className="closeIco" src="\img\closeIcon.svg" alt="" />
-                    </div>
+
                 </div>
 
             </div>
